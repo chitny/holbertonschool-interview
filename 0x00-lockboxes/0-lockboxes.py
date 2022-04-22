@@ -1,8 +1,11 @@
 #!/usr/bin/python3
+"""
+desc
+"""
 def canUnlockAll(boxes):
-    '''
+    """
     Check if we can open the boxes.
-    '''
+    """
     if (len(boxes) == 0):
         return False
     eachbox = list(range(len(boxes)))
