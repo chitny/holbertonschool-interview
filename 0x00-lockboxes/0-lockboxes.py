@@ -1,22 +1,22 @@
 #!/usr/bin/python3
 def canUnlockAll(boxes):
     '''
-    Check if we can open the boxes.
+    Method that determines if all the boxes can be opened.
     '''
     if (len(boxes) == 0):
         return False
-    eachbox = list(range(len(boxes)))
+    box = list(range(len(boxes)))
     key = [False]*len(boxes)
-    eachkeys = [0]
+    keys = [0]
     key[0] = True
 
-    for i in eachkeys:
-        for tk in boxes[i]:
-            if tk in eachbox:
-                if tk not in eachkeys:
-                    eachkeys.append(tk)
-                    key[tk] = True
+    for i in keys:
+        for k in boxes[i]:
+            if k in box:
+                if k not in keys:
+                    keys.append(k)
+                    key[k] = True
 
-    if True in key:
-        return True
-    return False
+    if False in key:
+        return False
+    return True
