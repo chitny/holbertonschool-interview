@@ -17,6 +17,6 @@ def canUnlockAll(boxes):
                     eachkeys.append(tk)
                     key[tk] = True
 
-    if True in key:
-        return True
-    return False
+    if False in key:
+        return False
+    return True
