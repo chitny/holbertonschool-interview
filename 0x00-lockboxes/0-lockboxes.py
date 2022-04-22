@@ -2,6 +2,8 @@
 """
 desc
 """
+
+
 def canUnlockAll(boxes):
     """
     Check if we can open the boxes.
