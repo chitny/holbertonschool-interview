@@ -6,7 +6,6 @@
  * @head: head of list.
  * @number: integer value to insert
  * Return: address of the new node, or NULL if it failed
- */
  **/
 listint_t *insert_node(listint_t **head, int number)
 {
@@ -20,11 +19,6 @@ listint_t *insert_node(listint_t **head, int number)
 	{
 		newNode->next = NULL;
 		*head = newNode;
-		return (newNode);
-	}
-	{
-		*head = newNode;
-		newNode->next = NULL;
 		return (newNode);
 	}
 	if (tmp->next == NULL)
