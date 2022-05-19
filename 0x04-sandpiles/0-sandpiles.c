@@ -111,7 +111,7 @@ void grid_change(int grid1[3][3])
 
 void sandpiles_sum(int grid1[3][3], int grid2[3][3])
 {
-	grid_addition(grid1, grid2);
+	gridadd(grid1, grid2);
 	while (!gridok(grid1))
 	{
 		grid_print(grid1);
