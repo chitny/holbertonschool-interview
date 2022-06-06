@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-a script that reads stdin line by line and computes metrics:
+Module that parses a log and prints stats to stdout
 """
 from sys import stdin
 
@@ -19,7 +19,7 @@ size = 0
 
 
 def print_stats():
-    """print these statistics from the beginning"""
+    """Prints the accumulated logs"""
     print("File size: {}".format(size))
     for status in sorted(status_codes.keys()):
         if status_codes[status]:
