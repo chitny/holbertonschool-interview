@@ -6,15 +6,15 @@
  */
 int check_cycle(listint_t *list)
 {
-	listint_t *sll = list, *luna = list;
+	listint_t *turtle = list, *hare = list;
 
 	if (list == NULL)
 		return (0);
-	while (luna != NULL && luna->next != NULL && luna->next->next != NULL)
+	while (hare != NULL && hare->next != NULL && hare->next->next != NULL)
 	{
-		sll = sll->next;
-		hare = luna->next->next;
-		if (sll == luna)
+		turtle = turtle->next;
+		hare = hare->next->next;
+		if (turtle == hare)
 			return (1);
 	}
 	return (0);
